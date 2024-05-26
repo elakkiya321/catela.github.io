@@ -1,0 +1,78 @@
+.sectionStyle{
+    padding: 6rem 0;
+    text-align: center;
+    background-color: #f6f0ea;
+}
+.sectionStyle .subHeading{
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+.sectionStyle .subHeading::before{
+    content: url('../../assets/images/leaf.svg');
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 20px;
+}
+.sectionStyle .subHeading::after{
+    content: url('../../assets/images/leaf.svg');
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 20px;
+}
+.sectionStyle .mainHeading{
+    font-size: 5rem;
+    text-transform: capitalize;
+    color: #09574a;
+}
+.GalleryCol{
+    padding: 0px 5px;
+}
+.GalleryImageBig{
+    max-width: 100%;
+    height: 610px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.GalleryImageSmall{
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.articleButton{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    font-size: 14px;
+    height: 56px;
+    line-height: 2;
+    padding: 6px 20px;
+    margin-top: 30px;
+}
+.articleButton::before{
+    content: "";
+    display: block;
+    background-color: rgb(235, 198, 164);
+    width: 56px;
+    height: 100%;
+    border-radius: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .3s ease;
+}
+.articleButton:hover{
+    color: #000;
+}
+.articleButton:hover::before{
+    width: 100%;
+}

@@ -1,0 +1,65 @@
+.mainFooter {
+  background-color: #09574a;
+  color: #fff;
+  padding: 3rem 0;
+  position: relative;
+}
+.mainFooter::after{
+  content: url('../../assets/images/footer_top_style.png');
+  display: block;
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  height: 30px;
+}
+.footerLinks a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 2;
+}
+.footerSubscribeInputGroup{
+  height: 50px;
+  margin-bottom: 3rem;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.footerSubscribeInputControl{
+  padding-left: 2rem;
+  font-size: 14px;
+  border: none;
+}
+.footerSubscribeInputControl:focus{
+  outline: none;
+  box-shadow: none;
+}
+.footerSubscribeButton{
+  padding-right: 2rem;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+}
+.footerSubscribeButton:active,
+.footerSubscribeButton:hover,
+.footerSubscribeButton:focus{
+  background-color: #ebc6a4;
+  outline: none;
+  box-shadow: none;
+}
+.socialLinks{
+  display: flex;
+  justify-content: flex-end;
+}
+.socialLinks a{
+  padding: 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+}
+.socialLinks a:hover{
+  color: #ebc6a4;
+  transform: scale(2,2);
+}

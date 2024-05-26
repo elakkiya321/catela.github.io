@@ -1,0 +1,94 @@
+.sectionStyle{
+    padding: 6rem 0;
+    text-align: center;
+    background-color: #f6f0ea;
+    background: url('../../assets/images/plate_pic.png') no-repeat left -7% top -2% / 23%  ,url('../../assets/images/mint_leaf.png') no-repeat right top #f6f0ea;
+}
+.sectionStyle .subHeading{
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+.sectionStyle .subHeading::before{
+    content: url('../../assets/images/leaf.svg');
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 20px;
+}
+.sectionStyle .subHeading::after{
+    content: url('../../assets/images/leaf.svg');
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 20px;
+}
+.sectionStyle .mainHeading{
+    font-size: 5rem;
+    text-transform: capitalize;
+    color: #09574a;
+}
+.sectionStyle .paraContent{
+    font-size: 20px;
+    font-weight: 100;
+    margin: 3rem 0;
+}
+.articleStyle{
+    padding: 3rem 5rem;
+    border-radius: 20px;
+    background: url('../../assets/images/banner.jpg') no-repeat top left  / cover;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.articleStyle::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    backdrop-filter: blur(3px);
+}
+.articleImage{
+    height: 500px;
+    border-radius: 200px 200px 20px 20px;
+    object-fit: cover;
+}
+.articleButton{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    font-size: 14px;
+    height: 45px;
+    line-height: 2;
+    padding: 6px 20px;
+    margin-top: 30px;
+}
+.articleButton::before{
+    content: "";
+    display: block;
+    background-color: rgb(235, 198, 164);
+    width: 45px;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .3s ease;
+}
+.articleButton:hover{
+    color: #000;
+}
+.articleButton:hover::before{
+    width: 100%;
+}

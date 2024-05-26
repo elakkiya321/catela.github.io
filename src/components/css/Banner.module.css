@@ -1,0 +1,48 @@
+.bannerSection {
+  background: url('../../assets/images/banner.jpg') no-repeat top right / 60%;
+  padding: 3rem 0;
+}
+
+.bannerSection,
+.bannerSection div {
+  height: calc(100vh - 86px);
+}
+.bannerSection div.bannerImg {
+  animation: rotate infinite 20s linear;
+  display: block;
+  position: relative;
+  width: 118px;
+  height: 118px;
+}
+.bannerImg::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  /* border-radius: 50%; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.bannerHeading {
+  font-size: 5rem;
+  margin: 2rem 0;
+}
+.bannerSubHeading {
+  line-height: 1.8;
+}
+.bannerButton {
+  font-size: 22px;
+  margin: 30px 0;
+  padding: 15px 30px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

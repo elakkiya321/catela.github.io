@@ -1,0 +1,19 @@
+{
+  "folders": [
+	{
+		"path": "../../../practise1/go-elakkiya"
+	},
+	{
+		"path": "../.."
+	},
+	{
+		"path": "../../../nextjs-dashboard"
+	},
+	{
+		"path": "../../../../../learnings"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "learnings"
+  }
+}
