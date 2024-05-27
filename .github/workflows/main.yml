@@ -1,9 +1,9 @@
-name: My CI Workflow
+name: Deploy to AWS Amplify
 
 on:
   push:
     branches:
-      - main
+      - main # Adjust this to your desired branch
 
 jobs:
   build:
@@ -11,7 +11,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Build and test
+      - name: Set branch name
+        run: echo "BRANCH_NAME=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Deploy
         run: |
-          # Your build and test commands here
-          echo "Building and testing..."
+          # Your deployment commands here
+          echo "Deploying branch $BRANCH_NAME"
