@@ -8,7 +8,7 @@ frontend:
             commands:
                 - 'npm run git-info'
     artifacts:
-        baseDirectory: build
+        baseDirectory: generatedGitInfo.json
         files:
             - '**/*'
     cache:
