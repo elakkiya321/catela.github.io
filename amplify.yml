@@ -6,9 +6,9 @@ frontend:
                 - 'npm i'
         build:
             commands:
-                - 'npm run git-info'
+                - 'npm run build'
     artifacts:
-        baseDirectory: generatedGitInfo.json
+        baseDirectory: build
         files:
             - '**/*'
     cache:
