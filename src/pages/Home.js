@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <>
-      <h2>Current Branch: {generatedGitInfo.gitBranch} </h2>
+      <h2>Current Branch test: {generatedGitInfo.gitBranch} </h2>
       <Header />
       <MainSection />
       <Footer />
