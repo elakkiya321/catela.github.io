@@ -4,9 +4,17 @@ frontend:
         preBuild:
             commands:
                 - 'npm i'
+                - 'npm run git-info'
+                - export REACT_APP_BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
+                
+        git-info: 
+            commands:
+                 - 'node src/gitInfo.js'
         build:
             commands:
                 - 'npm run build'
+                - 'npm run git-info'
+                
     artifacts:
         baseDirectory: build
         files:
