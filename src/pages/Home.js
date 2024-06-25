@@ -24,9 +24,11 @@ const Home = () => {
   }, []);
   return (
     <>
+
       <h2>Current Branch: {generatedGitInfo.gitBranch} </h2>
       <h2>Current Branch: {process.env.REACT_APP_BRANCH_NAME} </h2>
       <h1>Current Branch: {branchInfo.branch}</h1>
+
       <Header />
       <MainSection />
       <Footer />
