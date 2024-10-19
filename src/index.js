@@ -4,13 +4,17 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import App from './App';
 import './index.css';
+import { Provider } from 'react-redux';
+import store from './store/store';
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 
